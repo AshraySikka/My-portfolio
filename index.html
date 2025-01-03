@@ -119,12 +119,13 @@
         }
 
         .experience-item {
+            position: relative;
             background-color: #fff;
             padding: 20px;
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
+            cursor: pointer;
             overflow: hidden;
         }
         
@@ -139,10 +140,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             z-index: 1;
+            transition: top 0.3s ease-in-out;
         }
 
         .experience-item:hover .description {
-            display: block;
+            top: 0;
         }
 
         .expand {
