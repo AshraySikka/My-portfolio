@@ -110,7 +110,7 @@
             margin-top: 50px;
         }
 
-        .experience-item, .project-item {
+         .project-item {
             background-color: #fff;
             padding: 20px;
             margin-bottom: 30px;
@@ -118,7 +118,17 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .experience-item:hover, .project-item:hover {
+        .experience-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-item:hover {
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 
@@ -133,18 +143,7 @@
             color: #7f8c8d;
         }
 
-        .project-item .project-name {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .project-item .project-name:hover {
-            color: #2980b9;
-        }
-        
-        .description {
+         .description {
             display: none;
             position: absolute;
             top: 100%;
@@ -167,6 +166,17 @@
             color: #3498db;
             text-decoration: underline;
         } 
+
+        .project-item .project-name {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .project-item .project-name:hover {
+            color: #2980b9;
+        }
 
         footer {
             background-color: #34495e;
