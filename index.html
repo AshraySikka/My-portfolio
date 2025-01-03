@@ -17,25 +17,25 @@
             color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.4;
         }
 
         header {
             background-color: #34495e;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px 20px;
             position: relative;
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 10px;
         }
 
         .contact-info {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 15px;
         }
 
@@ -67,15 +67,15 @@
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #2c3e50;
             margin-bottom: 20px;
             text-align: center;
         }
 
         p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1rem;
+            line-height: 1.6;
             margin-bottom: 20px;
         }
 
@@ -89,17 +89,21 @@
 
         .skills-item, .certifications-item {
             background-color: #ecf0f1;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            width: 250px;
+            width: 200px;
             text-align: center;
-            transition: transform 0.3s ease;
         }
 
-        .skills-item:hover, .certifications-item:hover {
-            transform: scale(1.05);
-            background-color: #3498db;
-            color: white;
+        .certifications-item a {
+            text-decoration: none;
+            color: #7f8c8d;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .certifications-item a:hover {
+            color: #3498db;
         }
 
         .experience, .projects {
@@ -108,11 +112,10 @@
 
         .experience-item, .project-item {
             background-color: #fff;
-            padding: 30px;
+            padding: 20px;
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
         }
 
         .experience-item:hover, .project-item:hover {
@@ -120,13 +123,13 @@
         }
 
         .experience-item .job-title, .project-item .project-name {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: #2c3e50;
             font-weight: 600;
         }
 
         .experience-item .company, .project-item .project-description {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #7f8c8d;
         }
 
@@ -162,7 +165,7 @@
             }
 
             .skills-item, .certifications-item {
-                width: 200px;
+                width: 180px;
             }
         }
     </style>
@@ -199,12 +202,12 @@
 
 <section class="certifications">
     <h2>Certifications</h2>
-    <div class="certifications-item">Udemy: Python Bootcamp - 2024</div>
-    <div class="certifications-item">LinkedIn Learning: Agile Foundations</div>
-    <div class="certifications-item">LinkedIn Learning: Agile Development</div>
-    <div class="certifications-item">Udemy: C++ Bootcamp (Ongoing)</div>
-    <div class="certifications-item">Oracle: Java Core</div>
-    <div class="certifications-item">LinkedIn Learning: AI Foundations</div>
+    <div class="certifications-item"><a href="certifications/python-bootcamp.html">Udemy: Python Bootcamp - 2024</a></div>
+    <div class="certifications-item"><a href="certifications/agile-foundations.html">LinkedIn Learning: Agile Foundations</a></div>
+    <div class="certifications-item"><a href="certifications/agile-development.html">LinkedIn Learning: Agile Development</a></div>
+    <div class="certifications-item"><a href="certifications/cpp-bootcamp.html">Udemy: C++ Bootcamp (Ongoing)</a></div>
+    <div class="certifications-item"><a href="certifications/java-core.html">Oracle: Java Core</a></div>
+    <div class="certifications-item"><a href="certifications/ai-foundations.html">LinkedIn Learning: AI Foundations</a></div>
 </section>
 
 <section class="experience">
@@ -213,37 +216,46 @@
     <div class="experience-item">
         <div class="job-title">Senior Technical Project Coordinator</div>
         <div class="company">Bayshore Healthcare, Toronto — Nov 2023 - Present</div>
-        <p class="company-description">Directed the Go Live for Yardi implementation at 6 sites, achieving 95% timeline adherence. Automated workflows and improved system scalability with a team of 5, managing a $1.2M budget. Enhanced patient flow systems using Lean/Six Sigma, optimizing processes across departments. Led 5 large-scale technical initiatives, tracking OPEX and CAPEX for actionable insights. Communicated updates to stakeholders and ensured seamless Yardi and Procura integrations.</p>
+        <p>Directed the Go Live for Yardi implementation at 6 sites, achieving 95% timeline adherence. Automated workflows and improved system scalability with a team of 5, managing a $1.2M budget. Enhanced patient flow systems using Lean/Six Sigma, optimizing processes across departments. Led 5 large-scale technical initiatives, tracking OPEX and CAPEX for actionable insights. Communicated updates to stakeholders and ensured seamless Yardi and Procura integrations.</p>
     </div>
 
     <div class="experience-item">
         <div class="job-title">eClinical Implementation Specialist</div>
         <div class="company">Axiom Real-Time Metrics, Toronto — May 2022 - Nov 2023</div>
-        <p class="company-description">Configured and validated eCRF systems for 18 clinical research studies, ensuring robust data workflows. Designed QA tests, improving system reliability and increasing productivity by 30%. Optimized delivery pipelines, reducing lead times by 20% and achieving $50K/month savings. Managed 19 technical projects with Agile methodologies, delivering quality solutions on time. Implemented client-specific requirements into proprietary software (eBuilder).</p>
+        <p>Configured and validated eCRF systems for 18 clinical research studies, ensuring robust data workflows. Designed QA tests, improving system reliability and increasing productivity by 30%. Optimized delivery pipelines, reducing lead times by 20% and achieving $50K/month savings. Managed 19 technical projects with Agile methodologies, delivering quality solutions on time. Implemented client-specific requirements into proprietary software (eBuilder).</p>
     </div>
+
+    <div class="experience-item">
+        <div class="job-title">Software Developer | Project Manager</div>
+        <div class="company">Humber College, Toronto — May 2020 - August 2020</div>
+        <p>Reduced project timeline by 27% while leading an 8-member team through COVID-19 challenges. Coded backend systems and integrated APIs & JSON files for interface designs using Unity Hub. Enhanced software success by 10% through strategic KPI analysis and testing. Delivered comprehensive project schedules and risk management plans using Jira and MS Project.</p>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-title">Software Developer</div>
+        <div class="company">Larsen & Toubro, New Delhi, India — June 2018 - August 2018</div>
+        <p>Streamlined plant data reporting systems, reducing delays by 80%. Optimized client interfaces, enhancing user experience by over 40%. Improved the testing process and performed regression testing across multiple systems, increasing the overall efficiency of client projects. Developed product roadmaps and managed project requirements.</p>
+    </div>
+
 </section>
 
 <section class="projects">
     <h2>Projects</h2>
 
     <div class="project-item">
-        <div class="project-name"><a href="project-details/project1.html">Humber College Project Management Tool</a></div>
-        <p class="project-description">Developed simulation software using Unity and Figma, including algorithms for problem randomization.</p>
+        <a href="projects/software-automation-healthcare.html" class="project-name">Software for Automating Patient Monitoring</a>
+        <p>Developed a scalable solution for automated patient monitoring in healthcare settings. Integrated IoT devices to provide real-time updates on patient health, reducing manual data entry by 60% and enhancing patient care through actionable insights.</p>
     </div>
 
     <div class="project-item">
-        <div class="project-name"><a href="project-details/project2.html">Healthcare DBMS</a></div>
-        <p class="project-description">Centralized medical data with a database system using C++, C#, and SQL.</p>
+        <a href="projects/unity-simulation-tool.html" class="project-name">Unity Project Simulation Tool</a>
+        <p>Developed a tool for project simulation using Unity and Figma, allowing users to interact with project timelines and analyze potential risks. The tool was implemented at Humber College for educational purposes.</p>
     </div>
 
-    <div class="project-item">
-        <div class="project-name"><a href="project-details/project3.html">Larsen & Toubro Relay System</a></div>
-        <p class="project-description">Improved MCC-MCOMP relay efficiency by 15% with optimized C++ code.</p>
-    </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Ashray Sikka. All Rights Reserved.</p>
+    <p>&copy; 2025 Ashray Sikka | All Rights Reserved</p>
 </footer>
 
 </body>
