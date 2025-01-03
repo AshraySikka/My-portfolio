@@ -7,29 +7,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eef2f3;
+            line-height: 1.6;
+            background-color: #f4f4f4;
             color: #333;
-            text-align: center; /* Center-align the text */
         }
         header {
             background: #333;
             color: #fff;
-            padding: 1.5rem 0;
+            padding: 1rem 0;
+            text-align: center;
         }
         header h1 {
-            font-size: 2.5rem;
             margin: 0;
-        }
-        header p {
-            margin: 0.5rem 0;
         }
         .container {
             max-width: 1100px;
             margin: auto;
-            padding: 2rem;
+            overflow: hidden;
+            padding: 0 2rem;
         }
         nav {
             display: flex;
@@ -38,66 +36,45 @@
             padding: 0.5rem 0;
         }
         nav a {
-            color: #bbb; /* Subtle hyperlink color */
+            color: #fff;
             text-decoration: none;
             margin: 0 1rem;
             font-size: 1.1rem;
         }
         nav a:hover {
             text-decoration: underline;
-            color: #0056b3;
         }
         section {
             padding: 2rem 0;
         }
         h2 {
-            color: #444;
+            color: #333;
             text-align: center;
-            margin-bottom: 1rem;
         }
-        .skills, .projects, .experience, .education, .certifications {
+        .skills, .projects, .experience, .education {
             margin-bottom: 2rem;
         }
-        .skills table {
-            margin: 0 auto; /* Center-align the table */
-            border-collapse: collapse;
-            width: 70%;
+        ul {
+            list-style: none;
+            padding: 0;
         }
-        .skills th, .skills td {
-            border: 1px solid #ccc;
-            padding: 0.5rem;
-            text-align: center;
+        li {
+            margin: 0.5rem 0;
         }
         footer {
             text-align: center;
             background: #333;
             color: #fff;
-            padding: 1.5rem 0;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
         .social a {
-            color: #bbb;
+            color: #fff;
             margin: 0 0.5rem;
             text-decoration: none;
         }
         .social a:hover {
             color: #00aced;
-        }
-        .contact {
-            margin: 2rem 0;
-            padding: 2rem;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        .contact h2 {
-            margin-bottom: 1rem;
-        }
-        .experience ul li strong {
-            font-size: 1.2rem; /* Larger font size for company names */
-        }
-        .experience ul li p {
-            font-size: 1rem; /* Smaller font size for descriptions */
-            margin: 0.5rem 0;
         }
     </style>
 </head>
@@ -117,7 +94,6 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
     </nav>
 
     <div class="container">
@@ -129,54 +105,34 @@
 
         <section id="skills">
             <h2>Skills</h2>
-            <table>
-                <tr>
-                    <th>Programming</th>
-                    <th>Tools</th>
-                    <th>Methodologies</th>
-                    <th>Core Skills</th>
-                </tr>
-                <tr>
-                    <td>Python, Java, C++, C#, SQL, HTML</td>
-                    <td>Git, Unity, Arduino, Jira</td>
-                    <td>Agile (Scrum/Kanban), Lean, Six Sigma</td>
-                    <td>Troubleshooting, OOP</td>
-                </tr>
-            </table>
+            <ul>
+                <li>Programming: Python, Java, C++, C#, SQL, HTML</li>
+                <li>Tools: Git, Unity, Arduino, Jira</li>
+                <li>Methodologies: Agile (Scrum/Kanban), Lean, Six Sigma</li>
+                <li>Core Skills: Troubleshooting, OOP</li>
+            </ul>
         </section>
 
         <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li><strong>Bayshore Healthcare, Toronto — Senior Technical Project Coordinator</strong> <br>Nov 2023 - Present
-                    <p>Directed the Go Live for Yardi implementation at 6 sites, achieving 95% timeline adherence. Automated workflows and improved system scalability with a team of 5, managing a $1.2M budget. Enhanced patient flow systems using Lean/Six Sigma, optimizing processes across departments.</p>
-                </li>
-                <li><strong>Axiom Real-Time Metrics, Toronto — eClinical Implementation Specialist</strong> <br>May 2022 - Nov 2023
-                    <p>Configured and validated eCRF systems for 18 clinical research studies, ensuring robust data workflows. Designed QA tests, improving system reliability and increasing productivity by 30%. Optimized delivery pipelines, reducing lead times by 20% and achieving $50K/month savings.</p>
-                </li>
-                <li><strong>Humber College, Toronto — Software Developer | Project Manager</strong> <br>May 2020 - August 2020
-                    <p>Reduced project timeline by 27% while leading an 8-member team through COVID-19 challenges. Coded backend systems and integrated APIs & JSON files for interface designs using Unity Hub. Enhanced software success by 10% through strategic KPI analysis and testing.</p>
-                </li>
-                <li><strong>Larsen & Toubro, New Delhi, India — Software Developer</strong> <br>June 2018 - August 2018
-                    <p>Developed C++ projects for intelligent relay systems (MCC-MCOMP), improving efficiency by 15%. Designed power systems and implemented PLC programs for automation solutions.</p>
-                </li>
-                <li><strong>Insphere Solutions, New Delhi, India — Developer</strong> <br>August 2017 - May 2018
-                    <p>Optimized C++ code libraries, reducing processing time by 30% and memory usage by 65%. Developed algorithms, decreasing data analysis errors by 25% and supporting multi-application functionality.</p>
-                </li>
-                <li><strong>RailTel Corporation of India Ltd., New Delhi, India — Software Engineer</strong> <br>June 2017 - August 2017
-                    <p>Programmed C++ solutions for Mux systems, enhancing system performance and reliability. Implemented temperature monitoring using DS18B20 sensors and Arduino systems.</p>
-                </li>
+                <li><strong>Bayshore Healthcare, Toronto — Senior Technical Project Coordinator</strong> <br>Nov 2023 - Present</li>
+                <li><strong>Axiom Real-Time Metrics, Toronto — eClinical Implementation Specialist</strong> <br>May 2022 - Nov 2023</li>
+                <li><strong>Humber College, Toronto — Software Developer | Project Manager</strong> <br>May 2020 - August 2020</li>
+                <li><strong>Larsen & Toubro, New Delhi, India — Software Developer</strong> <br>June 2018 - August 2018</li>
+                <li><strong>Insphere Solutions, New Delhi, India — Developer</strong> <br>August 2017 - May 2018</li>
+                <li><strong>RailTel Corporation of India Ltd., New Delhi, India — Software Engineer</strong> <br>June 2017 - August 2017</li>
             </ul>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <ul>
-                <li><strong><a href="#" target="_blank">Humber College Project Management Tool</a></strong>: Simulation software using Unity and Figma.</li>
-                <li><strong><a href="#" target="_blank">Healthcare DBMS</a></strong>: Centralized medical data with a database system using C++, C#, and SQL.</li>
-                <li><strong><a href="#" target="_blank">Larsen & Toubro Relay System</a></strong>: Improved MCC-MCOMP relay efficiency by 15% with optimized C++ code.</li>
-                <li><strong><a href="#" target="_blank">RailTel Temperature Monitoring System</a></strong>: Arduino-based temperature monitoring for Mux rooms.</li>
-                <li><strong><a href="#" target="_blank">Engineering Projects</a></strong>: Line-following robot using IR sensors, greenhouse automation system powered by AI.</li>
+                <li><strong>Humber College Project Management Tool</strong>: Simulation software using Unity and Figma.</li>
+                <li><strong>Healthcare DBMS</strong>: Centralized medical data with a database system using C++, C#, and SQL.</li>
+                <li><strong>Larsen & Toubro Relay System</strong>: Improved MCC-MCOMP relay efficiency by 15% with optimized C++ code.</li>
+                <li><strong>RailTel Temperature Monitoring System</strong>: Arduino-based temperature monitoring for Mux rooms.</li>
+                <li><strong>Engineering Projects</strong>: Line-following robot using IR sensors, greenhouse automation system powered by AI.</li>
             </ul>
         </section>
 
@@ -187,21 +143,15 @@
                 <li><strong>Bharati Vidyapeeth’s College of Engineering, New Delhi</strong>: Bachelor’s of Technology (August 2015 - July 2019)</li>
             </ul>
         </section>
+    </div>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Udemy: Python Bootcamp - 2024</li>
-                <li>LinkedIn Learning: Agile Foundations</li>
-                <li>LinkedIn Learning: Agile Development</li>
-                <li>Udemy: C++ Bootcamp (Ongoing)</li>
-                <li>Oracle: Java Core</li>
-                <li>LinkedIn Learning: AI Foundations</li>
-            </ul>
-        </section>
+    <footer>
+        <p>&copy; 2025 Ashray Sikka</p>
+        <div class="social">
+            <a href="https://linkedin.com/in/ashraysikka" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/AshraySikka" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
 
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out for collaboration or inquiries.</p>
-            <p><strong>Email:</strong> <a href="mailto:ashray15.sikka@gmail.com">ashray15.sikka@gmail.com</a></p>
-            <p
