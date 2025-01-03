@@ -143,6 +143,30 @@
         .project-item .project-name:hover {
             color: #2980b9;
         }
+        
+        .description {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #f5f5f5;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .experience-item:hover .description {
+            display: block;
+        }
+
+        .expand {
+            margin-top: 10px;
+            cursor: pointer;
+            color: #3498db;
+            text-decoration: underline;
+        } 
 
         footer {
             background-color: #34495e;
@@ -277,6 +301,15 @@
     <div class="project-item">
         <a href="projects/engineering-projects.html" class="project-name">Engineering Projects</a>
         <p>Created a line-following robot using IR sensors and developed a greenhouse automation system powered by AI.</p>
+    </div>
+
+    <div class="experience-item">
+        <div class="job-title">Test</div>
+        <div class="company">Testing New Feature, New Delhi, India — June 2018 - August 2018</div>
+        <div class="description">
+            <p>- Streamlined plant data reporting systems, reducing delays by 80%.</p>
+            <p>- Optimized client interfaces, enhancing user experience by over 40%. Improved the testing process and performed regression testing across multiple systems, increasing the overall efficiency of client projects. Developed product roadmaps and managed project requirements.</p>
+        </div>
     </div>
     
 </section>
