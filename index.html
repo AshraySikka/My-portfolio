@@ -143,17 +143,11 @@
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-height: 0;
-            opacity: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, opacity 0.3s ease;
+            z-index: 10;
         }
 
         .experience-item:hover .description {
-            max-height: 200px;
-            opacity: 1;
-            top: 100%;
+            display: block;
         }
 
         .expand {
