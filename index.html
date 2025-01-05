@@ -83,21 +83,28 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 20px;
             margin-top: 30px;
         }
 
         .skills-item, .certifications-item {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 10px;
-            width: 200px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 220px;
             text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-
+        
+        .skills-item:hover, .certifications-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
         .certifications-item a {
             text-decoration: none;
-            color: #333;
+            color: #495057;
             font-weight: 500;
             transition: color 0.3s;
         }
