@@ -147,15 +147,20 @@
          .description {
             display: none;
             position: absolute;
-            background: #f5f5f5;
+            background: #ffffff;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(10px);
             z-index: 10;
+            transition: opacity 0.4s ease, transform 0.4s ease;
         }
 
         .experience-item:hover .description {
             display: block;
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .expand {
