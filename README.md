@@ -1,8 +1,8 @@
 **Ashray Sikka - Software Developer**
-Experienced backend developer skilled in Python, C++, Java, and Agile methodologies. Passionate about building efficient, scalable solutions and collaborating in cross-functional teams.
+Experienced backend developer skilled in Python, C++, JavaScript, and Agile methodologies. Passionate about building efficient, scalable solutions and collaborating in cross-functional teams.
 
 **Skills**
-Python, C++, Java, C#
+Python, C++, JavaScript, C#
 
 Agile (Scrum/Kanban), Lean & Six Sigma
 
